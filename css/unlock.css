@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+	font-family: "Inter", sans-serif;
+}
+
+.background {
+	position: absolute;
+	background: url("https://i.pinimg.com/564x/18/1e/1c/181e1cd3ea3ce63b43254ae6c3f45d4d.jpg") no-repeat;
+	background-size: cover;
+	background-position: fixed;
+	filter: blur(8px);
+	display: flex;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+div#unlocked {
+	display: none;
+	justify-content: center;
+}
+
+div.credentials {
+	position: fixed;
+	position: absolute;
+	top: 20%;
+	align-items: center;
+}
+
+div.credentials h3, input {
+	margin: 0;
+}
+
+h3 {
+	font-size: 30px;
+	color: #333333;
+}
+
+input {
+	margin-top: 20px;
+	border-radius: 20px;
+	outline: none;
+	height: 30px;
+	width: 300px;
+	font-size: large;
+	padding-left: 10px;
+	border: 1px solid gray;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+div.credentials img {
+	max-width: 300px;
+	max-height: 300px;
+	border-radius: 50%;
+	border: 2px solid white;
+}
