@@ -13,6 +13,11 @@ var lockerBackground = [
 	"https://images3.alphacoders.com/133/1334871.png"
 ];
 
+function hideLoader() {
+	var loader = document.getElementById("loader-wrapper");
+	loader.style.display = "none";
+}
+
 window.onload = function (e) {
 	function random(arr) {
 		var randomer = arr[Math.floor(Math.random() * arr.length)];
@@ -27,11 +32,8 @@ window.onload = function (e) {
 	lock.style.backgroundSize = "cover";
 	lock.style.backgroundRepeat = "no-repeat";
 
+	setTimeout(
+		hideLoader(),
+		3000
+	);
 };
-
-/*-----------------------------------Loading---------------------------*/
-
-window.addEventListener("load", function () {
-	var loader = document.getElementById("loader-wrapper");
-	loader.style.display = "none";
-});
