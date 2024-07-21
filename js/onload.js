@@ -34,6 +34,6 @@ window.onload = function (e) {
 
 	setTimeout(
 		hideLoader(),
-		3000
+		5000
 	);
 };
