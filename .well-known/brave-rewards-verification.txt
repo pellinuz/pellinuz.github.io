@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: pellinuz.github.io
+Token: ce86d9a3a3fce4356152bf9c216848ea5ab6a7508059e63d4d3b6b6a6eb120a7
