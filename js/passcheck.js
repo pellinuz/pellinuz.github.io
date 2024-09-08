@@ -16,7 +16,7 @@ function password() {
 		window.location.href = "https://twitch.tv/pellinuz";
 	} else if (input.value === "github") {
 		window.location.href = "https://github.com/pellinuz";
-	} else if (input.value === "project") {
+	} else if (input.value === "rep", "repository") {
 		window.location.href = "https://github.com/pellinuz/pellinuz.github.io";
 	} else {
 		alert("The password is not correct!");
