@@ -1,4 +1,5 @@
 var input = document.getElementById("password");
+var sendBtn = document.getElementById("send");
 
 function password() {
 	console.log("yes");
@@ -21,6 +22,10 @@ function password() {
 	} else {
 		alert("The password is not correct!");
 	}
+}
+
+function send() {
+	password();
 }
 
 input.addEventListener('keydown', function (event) {
