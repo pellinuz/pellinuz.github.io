@@ -1,11 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Windows 10 lockscreen</title>
-		<link rel="shortcut icon" href="/images/pfp/c45234bc8615ef3505c0f831d93be80d.jpg" type="image/x-icon">
-		<link rel="manifest" href="./manifest.json">
-
+		<title>Pellinuz's PC</title>
 		<link rel="stylesheet" href="./css/lock.css">
 		<link rel="stylesheet" href="./css/loader.css">
 		<link rel="stylesheet" href="./css/unlock.css">
@@ -20,57 +19,52 @@
 
 		<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" as="script">
 
-		<link rel="preload" href="./images/background/1316654.jpg" as="image">
-		<link rel="preload" href="./images/background/1292433.jpg" as="image">
-		<link rel="preload" href="./images/background/1345122.jpg" as="image">
-		<link rel="preload" href="./images/background/1343095.png" as="image">
-		<link rel="preload" href="./images/background/1347432.jpg" as="image">
-		<link rel="preload" href="./images/background/1349793.png" as="image">
-		<link rel="preload" href="./images/background/1348135.png" as="image">
-		<link rel="preload" href="./images/background/1341114.jpg" as="image">
-		<link rel="preload" href="./images/background/1334129.png" as="image">
-		<link rel="preload" href="./images/background/1334871.png" as="image">
+		<link rel="preload" href="https://images3.alphacoders.com/131/1316654.jpeg" as="image">
+		<link rel="preload" href="https://images5.alphacoders.com/129/1292433.jpg" as="image">
+		<link rel="preload" href="https://images5.alphacoders.com/134/1345122.jpeg" as="image">
+		<link rel="preload" href="https://images.alphacoders.com/134/1343095.png" as="image">
+		<link rel="preload" href="https://images.alphacoders.com/134/1347432.jpeg" as="image">
+		<link rel="preload" href="https://images8.alphacoders.com/134/1349793.png" as="image">
+		<link rel="preload" href="https://images3.alphacoders.com/134/1348135.png" as="image">
+		<link rel="preload" href="https://images5.alphacoders.com/134/1341114.jpeg" as="image">
+		<link rel="preload" href="https://images8.alphacoders.com/133/1334129.png" as="image">
+		<link rel="preload" href="https://images3.alphacoders.com/133/1334871.png" as="image">
 
-		<link rel="preload" href="./images/pfp/b6e038f009d9787e30d4d8c6631a552c.jpg" as="image">
-		<link rel="preload" href="./images/pfp/12f08a4db7431cfe72b88e2165333e80.jpg" as="image">
-		<link rel="preload" href="./images/pfp/c45234bc8615ef3505c0f831d93be80d.jpg" as="image">
+		<link rel="preload" href="https://i.pinimg.com/564x/b6/e0/38/b6e038f009d9787e30d4d8c6631a552c.jpg" as="image">
+		<link rel="preload" href="https://i.pinimg.com/564x/18/1e/1c/181e1cd3ea3ce63b43254ae6c3f45d4d.jpg" as="image">
 	</head>
 
 	<body>
 		<div id="loader-wrapper">
 			<div class="loader"></div>
 		</div>
-		<div id="button">
+		<button onclick="unlock()" id="button">
 			<div id="lockscreen">
 				<div id="time"></div>
 			</div>
-		</div>
-		<center>
-			<div id="unlocked">
-				<div class="background"></div>
-				<div class="credentials">
-					<div id="pfpset"></div>
-					<div id="form">
-						<center>
-							<h3>Pellinuz's website</h3>
-							<input type="password" id="password" placeholder="Password" autofocus>
-							<button id="sendBtn" onclick="send()">→</button>
-						</center>
-					</div>
-				</div>
+		</button>
+		<div id="unlocked">
+			<div class="background"></div>
+			<div class="credentials">
+				<img src="https://i.pinimg.com/564x/b6/e0/38/b6e038f009d9787e30d4d8c6631a552c.jpg" alt="">
+				<center>
+					<h3>Pellinuz's computer</h3>
+					<input type="password" id="password" placeholder="Password" autofocus>
+					<button id="send" onclick="send()">→</button>
+				</center>
 			</div>
-		</center>
+		</div>
 
 		<script src="./js/onload.js"></script>
 		<script src="./js/passcheck.js"></script>
 		<script src="./js/unlocker.js"></script>
-
+		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 		<script>
 			var urlParams;
 			(function () {
 				var match,
-					pl = /\+/g,
+					pl = /\+/g,  // Regex for replacing addition symbol with a space
 					search = /([^&=]+)=?([^&]*)/g,
 					decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
 					query = window.location.search.substring(1);
@@ -89,4 +83,5 @@
 			c();
 		</script>
 	</body>
+
 </html>
