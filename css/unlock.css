@@ -50,9 +50,25 @@ input {
 	color: white;
 }
 
-div.credentials img {
+#pfp {
+	width: 300px;
+	height: 300px;
 	max-width: 300px;
 	max-height: 300px;
 	border-radius: 50%;
 	border: 2px solid white;
+}
+
+#sendBtn {
+	justify-content: left;
+	background: rgba(126, 126, 126, 0.5);
+	color: #333333;
+	font-size: large;
+	border: 1px solid gray;
+	height: 26px;
+	width: 26px;
+	border-radius: 50%;
+	position: absolute;
+	transform: translate(-107%, 85%);
+	cursor: pointer;
 }

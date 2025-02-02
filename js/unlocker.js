@@ -1,9 +1,9 @@
 var lock = document.getElementById("lockscreen");
 var unlocked = document.getElementById("unlocked");
-const button = document.getElementById("button");
+var button = document.getElementById("button");
 
-function unlock() {
+button.addEventListener("click", function() {
 	lock.style.display = "none"
 	unlocked.style.display = "flex";
-	button.style.display= "none";
-};
+	button.style.display = "none";
+});
